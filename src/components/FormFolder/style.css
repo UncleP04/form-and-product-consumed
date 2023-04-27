@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.formContainer{
+    padding: 20px;
+    width: calc(100% - 20px);
+}
+
+.Form{
+ position: relative;
+ top: -30%;
+}
+
+.fieldsetContainer{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formTitle{
+    color: gray;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.inputField{
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.passwordinput{
+    border-left:  1px solid lightgray;
+    border-right:  1px solid lightgray;
+    border-bottom:  1px solid lightgray;
+    border-top:  none;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.buttonContainer{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    color: gray;
+    border: lightgray;
+    background: whitesmoke;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.button:hover{
+    background: gray;
+    color: white;
+}
+
+
+/* input:valid{
+    border: 1px solid green;
+    background: whitesmoke;
+} */
+
+
+
+.password{
+    display: flex; 
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid lightgray;
+}
+.passwordinput:invalid ~ .toggle{
+    display: none;
+}
+
+.toggle{
+top: 70%;
+right: 20px;
+}
+
+.positionLabelAndTo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.invalidInputCaller{
+    color: crimson;
+    padding: 2px;
+    text-transform: capitalize;
+    font: 10px;
+}
